@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive comments section</title>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <section class="chatbox-1">
+      <section class="voting">
+        <button><img src="images/icon-plus.svg" alt="" class="plus"></button>
+        <span class="vote-comment"></span>
+        <button><img src="images/icon-minus.svg" alt="" class="minus"></button>
+      </section>
+      <section class="user">
+        <section class="user-data">
+        <img src="" alt="" class="profile-pic">
+        <h1 class="username-comment"></h1>
+        <p class="comment-created"></p>
+        </section>
+        <section class="user-comment"></section>
+      </section>
+      <button class="reply"><img src="images/icon-reply.svg" alt=""> Reply</button>
+    </section>
+    <section class="update-reply">
+      <section>
+      <img src="" alt="" class="current-user-replying">
+      <textarea class="update-comment"></textarea>
+      <p class="update-comment updated-comment-show"></p>
+      <button class="press-reply">Reply</button>
+      </section>
+    </section>
+    <section class="chatbox-2">
+      <section class="voting">
+        <button>
+        <img src="images/icon-plus.svg" alt="" class="plus"></button>
+        <span class="vote-comment"></span>
+        <button><img src="images/icon-minus.svg" alt="" class="minus"></button>
+      </section>
+      <section class="user">
+        <section class="user-data">
+        <img src="" alt="" class="profile-pic">
+        <h1 class="username-comment"></h1>
+        <p class="comment-created"></p>
+        </section>
+        <section class="user-comment"></section>
+      </section>
+      <button class="reply"><img src="images/icon-reply.svg" alt=""> Reply</button>
+    </section>
+    <section class="update-reply">
+      <section>
+      <img src="" alt="" class="current-user-replying">
+      <textarea class="update-comment"></textarea>
+      <p class="update-comment updated-comment-show"></p>
+      <button class="press-reply">Reply</button>
+      </section>
+    </section>
+    <section class="reply-section">
+    <section class="chatbox-3">
+      <section class="voting">
+        <button><img src="images/icon-plus.svg" alt="" class="plus"></button>
+        <span class="vote-reply"></span>
+        <button><img src="images/icon-minus.svg" alt="" class="minus"></button>
+      </section>
+      <section class="user">
+        <section class="user-data">
+        <img src="" alt="" class="reply-profile-pic">
+        <h1 class="username-reply"></h1>
+        <p class="reply-created"></p>
+        </section>
+        <section class="user-comment-reply">
+          <span class="replying-to"></span><span class="user-comment-reply-content"></span>
+        </section>
+      </section>
+      <button class="reply"><img src="images/icon-reply.svg" alt=""> Reply</button>
+    </section>
+    <section class="chat-3 update-reply">
+      <section>
+      <img src="" alt="" class="current-user-replying">
+      <textarea class="update-comment"></textarea>
+      <p class="update-comment updated-comment-show"></p>
+      <button class="press-reply">Reply</button>
+      </section>
+    </section>
+    <section class="chatbox-4">
+      <section class="voting">
+        <button><img src="images/icon-plus.svg" alt="" class="plus"></button>
+        <span class="vote-reply"></span>
+        <button><img src="images/icon-minus.svg" alt="" class="minus"></button>
+      </section>
+      <section class="user">
+        <section class="user-data">
+        <img src="" alt="" class="reply-profile-pic">
+        <h1 class="username-reply"></h1>
+        <span class="you">You</span>
+        <p class="reply-created"></p>
+        </section>
+        <section class="user-comment-reply">
+          <span class="replying-to"></span><p class="user-comment-reply-content tomodify"></p>
+          <textarea name="" id="" cols="50" rows="5" class="modify-comment"></textarea>
+          <button class="update-button">Update</button>
+        </section>
+      </section>
+      <button class="delete"><img src="images/icon-delete.svg" alt=""> Delete</button>
+      <button class="edit"><img src="images/icon-edit.svg" alt=""> Edit</button>
+    </section>
+    </section>
+    <section class="chatbox-5">
+      <textarea name="" id="" cols="30" rows="10" placeholder="Add a comment." class="chat-5-textarea"></textarea>
+      <p class="chat-5-para"></p>
+      <div class="add-comments">
+        <img src="" alt="" class="current-user">
+        <button class="chat-5-send">Send</button>
+      </div>
+    </section>
+    </section>
+  </main>
+  <section class="modal">
+    <section class="content">
+    <h1>Delete Comment</h1>
+    <p>Are you sure you want to delete this comment? This will remove the comment and can't be undone.</p>
+    <button class="cancel">NO, CANCEL</button>
+    <button class="confirm">YES, DELETE</button>
+    </section>
+</body>
+
+</html>

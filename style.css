@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(223, 19%, 93%);
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: flex-end;
+}
+
+main>section {
+    background-color: white;
+    margin-top: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: moveup;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-timing-function: ease-out;
+}
+
+.update-reply section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.update-reply img {
+    width: 40px;
+    height: 40px;
+}
+
+.update-reply textarea {
+    width: 70%;
+    border: 1px solid grey;
+    border-radius: 10px;
+    height: 10vh;
+    resize: none;
+}
+
+.press-reply {
+    width: 100px;
+    height: 40px;
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border-radius: 10px;
+}
+
+.reply-section {
+    background-color: transparent;
+    border-left: 1px solid white;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 0;
+    border-radius: 0;
+}
+
+.chatbox-3, .chatbox-4,.chat-3 {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 95%;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+    border-radius: 10px;
+    animation-name: moveup;
+    animation-duration: 2s;
+}
+
+.update-reply {
+    display: none;
+}
+
+.update-reply-hide {
+    display: block;
+}
+
+
+.user-data {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.user-data img {
+    width: 50px;
+}
+
+.user-comment, .user-comment-reply {
+    padding: 15px;
+}
+
+.user-comment-reply .user-comment-reply-content{
+    display: inline;
+}
+
+.voting {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.212);
+    border-radius: 10px;
+    color: hsl(238, 40%, 52%);
+}
+
+.voting button {
+    height: 100%;
+    width: 20px;
+}
+
+.reply, .delete, .edit {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.delete {
+    right: 100px;
+    color: hsl(358, 79%, 66%);
+}
+
+.delete, .edit {
+    width: 80px;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: hsl(212, 24%, 26%);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.you {
+    background-color: hsl(238, 40%, 52%);
+    width: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.replying-to {
+    font-weight: bold;
+    color: hsl(212, 24%, 26%);
+}
+
+.chatbox-5 {
+    flex-direction: column;
+    padding: 20px;
+}
+
+textarea {
+    padding: 10px;
+    font-weight: bold;
+    resize: none;
+}
+
+.add-comments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-comments img, .add-comments button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+}
+
+.add-comments button {
+    width: 100px;
+    background-color: hsl(238, 40%, 52%);
+    border-radius: 10px;
+    color: white;
+}
+
+.updated-comment-show {
+    display: none;
+    padding: 10px;
+}
+
+.modify-comment {
+    display: none;
+}
+
+.update-button {
+    display: none;
+    width: 100px;
+    background-color: hsl(238, 40%, 52%);
+    border: 1px solid transparent;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.chat-5-para {
+    display: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(48, 47, 45, 0.589);
+    display: none;
+}
+
+.modal section {
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    margin-top: 30vh;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.modal h1 {
+    text-align: center;
+}
+
+.modal p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.modal button {
+    width: 100px;
+    border: 1px solid transparent;
+    color: floralwhite;
+    padding: 5px;
+    margin-left: 30px;
+}
+
+.cancel {
+    background-color: grey;
+}
+
+.confirm {
+    background-color: hsl(358, 79%, 66%);
+}
+
+
+/* @keyframes moveup {
+    0% {
+        opacity: 0;
+        top: -10px;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0px;
+    }
+} */
+
+@media screen and (min-width:756px) {
+    main > section {
+        flex-direction: row;
+    }
+
+    .voting {
+        width: 100px;
+        height: 100px;
+        flex-direction: column;
+    }
+
+    .reply-section > section {
+        flex-direction: row;
+    }
+}
